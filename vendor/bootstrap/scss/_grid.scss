@@ -27,6 +27,7 @@
 @if $enable-grid-classes {
   .row {
     @include make-row();
+    margin: 0!important;
   }
 
   // Remove the negative margin from default .row, then the horizontal padding
