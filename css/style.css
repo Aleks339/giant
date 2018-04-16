@@ -2,13 +2,12 @@ body #header {
   background-image: url(../img/banner/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -60px;
-  padding-left: 40px;
   padding-top: 50px;
   width: 100%;
 }
 body #header #header-container {
   margin-right: 0;
+  padding-right: 0;
 }
 body #header #header-container .header_logo--wrapper {
   display: flex;
@@ -55,19 +54,21 @@ body #header #header-container .header_menu-list .header_menu-list--item:last-ch
   font-weight: bold;
   white-space: nowrap;
 }
-body #header #header-container section {
+body #header #header-container #section {
   word-spacing: -10px;
   letter-spacing: -1.1px;
-}
-body #header #header-container section #iphone-container {
   margin-right: 0;
   padding-right: 0;
 }
-body #header #header-container section #iphone-container .row {
+body #header #header-container #section #iphone-container {
   margin-right: 0;
   padding-right: 0;
 }
-body #header #header-container section #iphone-container .row .header_section--h1 {
+body #header #header-container #section #iphone-container #iphone-row {
+  margin-right: 0;
+  padding-right: 0;
+}
+body #header #header-container #section #iphone-container #iphone-row .header_section--h1 {
   font-size: 54px;
   font-family: "Dosis";
   color: white;
@@ -78,7 +79,7 @@ body #header #header-container section #iphone-container .row .header_section--h
   letter-spacing: -2px;
   margin-top: 150px;
 }
-body #header #header-container section #iphone-container .row .header_section--paragraph {
+body #header #header-container #section #iphone-container #iphone-row .header_section--paragraph {
   font-size: 14px;
   font-family: "Dosis";
   color: white;
@@ -88,10 +89,10 @@ body #header #header-container section #iphone-container .row .header_section--p
   word-spacing: 1px;
   letter-spacing: 0.1px;
 }
-body #header #header-container section #iphone-container .row .header_section--menu-list {
+body #header #header-container #section #iphone-container #iphone-row .header_section--menu-list {
   margin-top: -4px;
 }
-body #header #header-container section #iphone-container .row .header_section--menu-list .header_section--menu-item {
+body #header #header-container #section #iphone-container #iphone-row .header_section--menu-list .header_section--menu-item {
   font-size: 14px;
   font-family: "Roboto";
   color: white;
@@ -101,7 +102,7 @@ body #header #header-container section #iphone-container .row .header_section--m
   word-spacing: 1.5px;
   list-style-type: none;
 }
-body #header #header-container section #iphone-container .row .header_section--button {
+body #header #header-container #section #iphone-container #iphone-row .header_section--button {
   font-size: 14px;
   font-family: "Roboto";
   color: #222222;
@@ -119,7 +120,7 @@ body #header #header-container section #iphone-container .row .header_section--b
   word-spacing: -3px;
   cursor: pointer;
 }
-body #header #header-container section #iphone-container .row #iphone-wrapper {
+body #header #header-container #section #iphone-container #iphone-row #iphone-wrapper {
   padding-right: 0;
   margin-right: 0;
   background-image: url(../img/banner/mockup1.png), url(../img/banner/mockup2.png), url(../img/banner/mockup3.png), url(../img/banner/iPhones.png);
