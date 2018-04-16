@@ -1,21 +1,25 @@
-body header {
+body #header {
   background-image: url(../img/banner/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -60px;
   padding-left: 40px;
+  padding-top: 50px;
   width: 100%;
 }
-body header .header_logo--wrapper {
+body #header #header-container {
+  margin-right: 0;
+}
+body #header #header-container .header_logo--wrapper {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   padding-left: 44px;
 }
-body header .header_logo--wrapper .header_logo--img {
+body #header #header-container .header_logo--wrapper .header_logo--img {
   margin-left: 31px;
 }
-body header .header_logo--wrapper .header_logo--h4 {
+body #header #header-container .header_logo--wrapper .header_logo--h4 {
   font-size: 36px;
   font-family: "Dosis";
   color: white;
@@ -23,12 +27,13 @@ body header .header_logo--wrapper .header_logo--h4 {
   line-height: 0.667;
   letter-spacing: -2px;
 }
-body header .header_menu-list {
+body #header #header-container .header_menu-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 40px;
 }
-body header .header_menu-list .header_menu-list--item {
+body #header #header-container .header_menu-list .header_menu-list--item {
   font-size: 14px;
   font-family: "Roboto";
   color: white;
@@ -36,29 +41,33 @@ body header .header_menu-list .header_menu-list--item {
   text-align: right;
   list-style-type: none;
   cursor: pointer;
+  text-align: center;
+  width: 100px;
 }
-body header .header_menu-list .header_menu-list--item:last-child {
-  background-image: url(../img/header/button-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+body #header #header-container .header_menu-list .header_menu-list--item:last-child {
+  background: white;
   font-size: 14px;
   font-family: "Roboto";
   color: #222222;
   line-height: 1.714;
-  text-align: center;
   padding: 5px;
   border-radius: 30px;
   font-weight: bold;
+  white-space: nowrap;
 }
-body header section {
+body #header #header-container section {
   word-spacing: -10px;
   letter-spacing: -1.1px;
 }
-body header section .row {
-  margin: 0!important;
+body #header #header-container section #iphone-container {
+  margin-right: 0;
+  padding-right: 0;
 }
-body header section .row .header_section--h1 {
+body #header #header-container section #iphone-container .row {
+  margin-right: 0;
+  padding-right: 0;
+}
+body #header #header-container section #iphone-container .row .header_section--h1 {
   font-size: 54px;
   font-family: "Dosis";
   color: white;
@@ -69,7 +78,7 @@ body header section .row .header_section--h1 {
   letter-spacing: -2px;
   margin-top: 150px;
 }
-body header section .row .header_section--paragraph {
+body #header #header-container section #iphone-container .row .header_section--paragraph {
   font-size: 14px;
   font-family: "Dosis";
   color: white;
@@ -79,10 +88,10 @@ body header section .row .header_section--paragraph {
   word-spacing: 1px;
   letter-spacing: 0.1px;
 }
-body header section .row .header_section--menu-list {
+body #header #header-container section #iphone-container .row .header_section--menu-list {
   margin-top: -4px;
 }
-body header section .row .header_section--menu-list .header_section--menu-item {
+body #header #header-container section #iphone-container .row .header_section--menu-list .header_section--menu-item {
   font-size: 14px;
   font-family: "Roboto";
   color: white;
@@ -92,7 +101,7 @@ body header section .row .header_section--menu-list .header_section--menu-item {
   word-spacing: 1.5px;
   list-style-type: none;
 }
-body header section .row .header_section--button {
+body #header #header-container section #iphone-container .row .header_section--button {
   font-size: 14px;
   font-family: "Roboto";
   color: #222222;
@@ -110,7 +119,9 @@ body header section .row .header_section--button {
   word-spacing: -3px;
   cursor: pointer;
 }
-body header section .row .header_section--iphones {
+body #header #header-container section #iphone-container .row #iphone-wrapper {
+  padding-right: 0;
+  margin-right: 0;
   background-image: url(../img/banner/mockup1.png), url(../img/banner/mockup2.png), url(../img/banner/mockup3.png), url(../img/banner/iPhones.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: auto, auto, auto, auto;
@@ -155,6 +166,7 @@ body .section_dont-leave-wrapper .section_dont-leave--device {
   background-size: auto, auto;
   background-position: center center, center center;
   height: 470px;
+  margin-bottom: 100px;
 }
 body .section_dont-leave-wrapper .section_dont-leave--content h2 {
   font-size: 36px;
@@ -189,7 +201,6 @@ body .section_screenshots h2 {
   color: #222222;
   line-height: 0.833;
   text-align: center;
-  padding-top: 100px;
   margin-top: 100px;
 }
 body .section_screenshots p {
@@ -211,22 +222,22 @@ body .section_screenshots .section_screenshots--imgs img {
 }
 body .section_screenshots .section_screenshots--imgs img:first-child {
   position: relative;
-  left: 45%;
+  left: 54%;
   z-index: 40;
 }
 body .section_screenshots .section_screenshots--imgs img:nth-child(2) {
   position: relative;
-  left: 44%;
+  left: 54%;
   z-index: 1;
 }
 body .section_screenshots .section_screenshots--imgs img:nth-child(3) {
   position: relative;
-  left: 28%;
+  left: 36%;
   z-index: 4;
 }
 body .section_screenshots .section_screenshots--imgs img:nth-child(4) {
   position: relative;
-  left: 12%;
+  left: 18%;
   z-index: 5;
 }
 body .section_screenshots .section_screenshots--imgs img:nth-child(5) {
@@ -236,22 +247,22 @@ body .section_screenshots .section_screenshots--imgs img:nth-child(5) {
 }
 body .section_screenshots .section_screenshots--imgs img:nth-child(6) {
   position: relative;
-  left: -14%;
+  left: -19%;
   z-index: 7;
 }
 body .section_screenshots .section_screenshots--imgs img:nth-child(7) {
   position: relative;
-  left: -29%;
+  left: -36%;
   z-index: 3;
 }
 body .section_screenshots .section_screenshots--imgs img:nth-child(8) {
   position: relative;
-  left: -43%;
+  left: -54%;
   z-index: 2;
 }
 body .section_screenshots .section_screenshots--imgs img:last-child {
   position: relative;
-  left: -46%;
+  left: -54%;
   z-index: 40;
 }
 body .section_price {
@@ -507,14 +518,15 @@ body footer .footer_copyright {
   }
 }
 @media screen and (max-width: 1000px) {
+  .header_section--h1 {
+    font-size: 40px!important;
+  }
   .header_menu-list {
     display: block!important;
   }
   .header_menu-list li {
     text-align: center!important;
-  }
-  .header_section--h1 {
-    font-size: 40px!important;
+    margin-right: 10px!important;
   }
   .section_dont-leave--content h2,
   .section_dont-leave--content p,
@@ -523,6 +535,10 @@ body footer .footer_copyright {
   }
 }
 @media screen and (max-width: 1300px) {
+  .header_menu-list li {
+    text-align: center!important;
+    margin-right: 20px!important;
+  }
   .section_screenshots {
     display: none!important;
   }

@@ -4,122 +4,133 @@
 @headerFontColor:white;
 
 body{
-    header{
+    #header{
         background-image: url(../img/banner/BG.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 -60px;
         padding-left: 40px;
+        padding-top: 50px;
         width:100%;
-        .header_logo--wrapper{
-          display: flex;
-          flex-direction: row;
-          align-items: baseline;
-          padding-left: 44px;
-          .header_logo--img{
-            margin-left: 31px;    
-          }
-          .header_logo--h4{
-              font-size: 36px;
-              font-family: @logoFontFamily;
-              color: @headerFontColor;
-              font-weight: bold;
-              line-height: 0.667;
-              letter-spacing: -2px;
-          }
-        }
-        .header_menu-list{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            .header_menu-list--item{
-              font-size: 14px;
-              font-family:@menuItemsFontFamily;
-              color: @headerFontColor;
-              line-height: 1.714;
-              text-align: right;
-              list-style-type: none;
-              cursor: pointer;
-              &:last-child{
-                background-image: url(../img/header/button-bg.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                font-size: 14px;
-                font-family:@menuItemsFontFamily;
-                color: rgb(34, 34, 34);
-                line-height: 1.714;
-                text-align: center;
-                padding: 5px;
-                border-radius: 30px;
-                font-weight: bold;
+        #header-container{
+            margin-right: 0;
+            .header_logo--wrapper{
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              padding-left: 44px;
+              .header_logo--img{
+                margin-left: 31px;    
+              }
+              .header_logo--h4{
+                  font-size: 36px;
+                  font-family: @logoFontFamily;
+                  color: @headerFontColor;
+                  font-weight: bold;
+                  line-height: 0.667;
+                  letter-spacing: -2px;
               }
             }
-        }
-        section{
-            word-spacing: -10px;
-            letter-spacing: -1.1px;
-            .row{
-                margin: 0!important;
-                .header_section--h1{
-                  font-size: 54px;
-                  font-family: @logoFontFamily;
-                  color: @headerFontColor;
-                  font-weight: bold;
-                  line-height: 1.111;
-                  text-align: left;
-                  word-spacing: -4px;
-                  letter-spacing: -2px;
-                  margin-top: 150px;
-                }
-                .header_section--paragraph{
+            .header_menu-list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-right: 40px;
+                .header_menu-list--item{
                   font-size: 14px;
-                  font-family: @logoFontFamily;
+                  font-family:@menuItemsFontFamily;
                   color: @headerFontColor;
                   line-height: 1.714;
-                  margin-top: 19px;
-                  padding-left: 2px;
-                  word-spacing: 1px;
-                  letter-spacing: 0.1px;
+                  text-align: right;
+                  list-style-type: none;
+                  cursor: pointer;
+                  text-align: center;
+                  width:100px;
+                  &:last-child{
+                    background:white;
+                    font-size: 14px;
+                    font-family:@menuItemsFontFamily;
+                    color: rgb(34, 34, 34);
+                    line-height: 1.714;
+                    padding: 5px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                  }
                 }
-                .header_section--menu-list{
-                    margin-top: -4px;
-                    .header_section--menu-item{
-                      font-size: 14px;
-                      font-family: @menuItemsFontFamily;
-                      color: @headerFontColor;
-                      line-height: 2.5;
-                      margin-left: -2px;
-                      letter-spacing: 0.19px;
-                      word-spacing: 1.5px;
-                      list-style-type: none;
+            }
+            section{
+                word-spacing: -10px;
+                letter-spacing: -1.1px;
+                #iphone-container{
+                    margin-right: 0;
+                    padding-right: 0;
+                    .row{
+                        margin-right: 0;
+                        padding-right: 0;
+                        .header_section--h1{
+                          font-size: 54px;
+                          font-family: @logoFontFamily;
+                          color: @headerFontColor;
+                          font-weight: bold;
+                          line-height: 1.111;
+                          text-align: left;
+                          word-spacing: -4px;
+                          letter-spacing: -2px;
+                          margin-top: 150px;
+                        }
+                        .header_section--paragraph{
+                          font-size: 14px;
+                          font-family: @logoFontFamily;
+                          color: @headerFontColor;
+                          line-height: 1.714;
+                          margin-top: 19px;
+                          padding-left: 2px;
+                          word-spacing: 1px;
+                          letter-spacing: 0.1px;
+                        }
+                        .header_section--menu-list{
+                            margin-top: -4px;
+                            .header_section--menu-item{
+                              font-size: 14px;
+                              font-family: @menuItemsFontFamily;
+                              color: @headerFontColor;
+                              line-height: 2.5;
+                              margin-left: -2px;
+                              letter-spacing: 0.19px;
+                              word-spacing: 1.5px;
+                              list-style-type: none;
+                            }
+                        }
+                        .header_section--button{
+                          font-size: 14px;
+                          font-family: @menuItemsFontFamily;
+                          color: rgb(34, 34, 34);
+                          line-height: 2.143;
+                          text-align: center;
+                          background-color:white;
+                          padding: 5px;
+                          margin-top: 29px;
+                          margin-left: 7px;
+                          font-weight: bold;
+                          height: 37px;
+                          width: 190px;
+                          border-radius: 30px;
+                          letter-spacing: 0.1px;
+                          word-spacing: -3px;
+                          cursor: pointer;
+                        }
+                        #iphone-wrapper{
+                            padding-right: 0;
+                            margin-right: 0;
+                            background-image:url(../img/banner/mockup1.png), url(../img/banner/mockup2.png), url(../img/banner/mockup3.png), url(../img/banner/iPhones.png);
+                            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+                            background-size: auto, auto, auto, auto;
+                            background-position: 43px 241px, 278px 134px, 509px 59px, 14px 30px;
+                            height: 690px;
+                        }        
                     }
                 }
-                .header_section--button{
-                  font-size: 14px;
-                  font-family: @menuItemsFontFamily;
-                  color: rgb(34, 34, 34);
-                  line-height: 2.143;
-                  text-align: center;
-                  background-color:white;
-                  padding: 5px;
-                  margin-top: 29px;
-                  margin-left: 7px;
-                  font-weight: bold;
-                  height: 37px;
-                  width: 190px;
-                  border-radius: 30px;
-                  letter-spacing: 0.1px;
-                  word-spacing: -3px;
-                  cursor: pointer;
-                }
-                .header_section--iphones{
-                    background-image:url(../img/banner/mockup1.png), url(../img/banner/mockup2.png), url(../img/banner/mockup3.png), url(../img/banner/iPhones.png);
-                    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-                    background-size: auto, auto, auto, auto;
-                    background-position: 43px 241px, 278px 134px, 509px 59px, 14px 30px;
-                    height: 690px;
-                }        
             }
         }
     }
@@ -165,6 +176,7 @@ body{
             background-size: auto, auto;
             background-position: center center, center center;
             height: 470px;
+            margin-bottom: 100px;
         }   
         .section_dont-leave--content{
             h2{
@@ -204,7 +216,6 @@ body{
           color: rgb(34, 34, 34);
           line-height: 0.833;
           text-align: center;
-          padding-top: 100px;
           margin-top: 100px;
         }
         p{
@@ -224,22 +235,22 @@ body{
                 cursor: pointer;
                 &:first-child{
                     position: relative;
-                    left: 45%;
+                    left: 54%;
                     z-index: 40;
                 }
                 &:nth-child(2){
                     position: relative;
-                    left:44%;
+                    left:54%;
                     z-index: 1;
                 }
                 &:nth-child(3){
                     position: relative;
-                    left:28%;
+                    left:36%;
                     z-index: 4;
                 }
                 &:nth-child(4){
                     position: relative;
-                    left:12%;
+                    left:18%;
                     z-index: 5;
                 }
                 &:nth-child(5){
@@ -249,22 +260,22 @@ body{
                 }
                 &:nth-child(6){
                     position: relative;
-                    left:-14%;
+                    left:-19%;
                     z-index: 7;
                 }
                 &:nth-child(7){
                     position: relative;
-                    left:-29%;
+                    left:-36%;
                     z-index: 3;
                 }
                 &:nth-child(8){
                     position: relative;
-                    left:-43%;
+                    left:-54%;
                     z-index: 2;
                 }
                 &:last-child{
                     position: relative;
-                    left: -46%;
+                    left: -54%;
                     z-index: 40;
                 }
             }
@@ -363,6 +374,7 @@ body{
             }
         }
     }
+    
     .section_video{
         width:100%;
         height: 300px;
@@ -372,6 +384,7 @@ body{
         background-size: auto, cover;
         cursor: pointer;
     }
+    
     .section_reviews{
         .section_reviews--h2{
           font-size: 36px;
@@ -526,7 +539,6 @@ body{
     }
 }
 
-
 @media screen and (max-width: 800px){
     .section_reviews--wrapper{
         width: 100% !important;
@@ -534,14 +546,15 @@ body{
 }
 
 @media screen and (max-width: 1000px){
+    .header_section--h1{
+        font-size: 40px!important;
+    }
     .header_menu-list{
         display: block!important;
         li{
-           text-align: center!important; 
+           text-align: center!important;
+           margin-right: 10px!important; 
         }
-    }
-    .header_section--h1{
-        font-size: 40px!important;
     }
     .section_dont-leave--content{
         h2, p, ul>li{
@@ -551,6 +564,12 @@ body{
 }
 
 @media screen and (max-width: 1300px){
+    .header_menu-list{
+        li{
+           text-align: center!important;
+           margin-right: 20px!important; 
+        }
+    }
     .section_screenshots{
         display: none!important;
     }
