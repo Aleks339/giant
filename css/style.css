@@ -385,6 +385,7 @@ body .section_reviews .section_reviews--row .section_reviews--wrapper {
   flex-direction: column;
   width: 25%;
   margin-bottom: 50px;
+  padding: 20px;
 }
 body .section_reviews .section_reviews--row .section_reviews--wrapper p {
   font-size: 14px;
@@ -421,7 +422,6 @@ body .section_reviews .section_reviews--row .section_reviews--wrapper:hover {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  padding: 20px;
 }
 body .section_download {
   background-image: url(../img/download/bg-windows.png);
